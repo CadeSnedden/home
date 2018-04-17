@@ -11,7 +11,7 @@ namespace ProcessExitSample
             {
 		//Edit Filename to which ever file is wanting to be ran.
                 Process firstProc = new Process();
-                firstProc.StartInfo.FileName = "*.bat";
+                firstProc.StartInfo.FileName = "*.*";
                 firstProc.EnableRaisingEvents = true;
 
                 firstProc.Start();
@@ -24,7 +24,7 @@ namespace ProcessExitSample
 
 		//Edit the Filename to which ever file it wanting to be ran.
                 Process secProc = new Process();
-                secProc.StartInfo.FileName = "*.exe";
+                secProc.StartInfo.FileName = "*.*";
                 secProc.Start();                
 
             }
